@@ -46,7 +46,7 @@
 /* header */
 .header {
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   background-image: url("images/header.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -69,11 +69,11 @@
 }
 
 .header .box-header button {
-  border: 2px solid #FFF;
-  color: #FFF;
+  border: 2px solid #fff;
+  color: #fff;
   display: block;
   background: transparent;
-  transition: .2s ease-in-out 0s;
+  transition: 0.2s ease-in-out 0s;
   padding: 15px;
 }
 
@@ -81,7 +81,7 @@
   color: #ffffff;
   text-decoration: none;
   display: block;
-  transition: .2s ease-in-out 0s;
+  transition: 0.2s ease-in-out 0s;
   margin: 50px auto;
   padding-left: 1rem;
 }
@@ -89,28 +89,61 @@
 .header .box-header button:hover {
   cursor: pointer;
   transform: scale(1.25);
-  background: #FFF;
+  background: #fff;
   color: #000;
 }
 
-
 /* header */
 
-
 /* main */
 
-.main{
+.main {
   width: 100%;
-  height: 115vh;
+  height: 145vh;
+  background-color: paleturquoise;
+  padding: 3% 0 3% 0;
 }
 
-.main .box-main{
-  padding: 5% 5% 5% 5%;
-  gap: 5px;
-}
-
-.main .box-main .title-main{
+.main h1 {
+  color: #000;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.main .loc-main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.main .loc-main .locate {
+  width: 30%;
+  margin-bottom: 30px;
+  background-color: lavenderblush;
+}
+
+.main .loc-main .locate img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.main .loc-main .locate a {
+  text-decoration: none;
+}
+
+.main .loc-main .locate p {
+  text-align: justify;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: #333;
 }
 
 /* main */
+
+/*  */
