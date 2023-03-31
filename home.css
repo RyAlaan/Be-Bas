@@ -97,7 +97,7 @@
 .main {
   width: 100%;
   height: 155vh;
-  background-color: lightblue;
+  background-color: #E9F2FA;
   padding: 3% 0 3% 0;
 }
 
@@ -121,7 +121,7 @@
 .main .loc-main .locate {
   width: 30%;
   margin-bottom: 30px;
-  background-color: lavenderblush;
+  background-color: #FFF;
   transition: 0.2s ease-in-out 0s;
 }
 
@@ -148,13 +148,26 @@
 
 /* main */
 
+/* about */
+.about{
+  width: 100%;
+  height: 100vh;
+}
+.about .box-about{
+  align-items: center;
+}
+.about .box-about table{
+  align-content: center;
+}
+/* about */
+
 /* subs */
 .subs {
   width: 100%;
   height: 50vh;
   padding: 5% 5% 5% 5%;
+  background-color: #E9F2FA;
 }
-
 .subs .box-subs {
   width: 50%;
   height: 100%;
