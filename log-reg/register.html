@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/328128838d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="home.css" />
+
+    <title>Be-Bas | Register</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-image: url("../images/header.jpeg");
+        overflow: hidden;
+      }
+      /* Navbar */
+      .navbar {
+        width: 100%;
+        height: 100%;
+        background-color: #202020;
+        color: #ffffff;
+        top: 50%;
+        bottom: 50%;
+        display: flex;
+      }
+
+      .navbar .box-navbar {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0.5rem 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar .links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .navbar a:hover {
+        color: rgba(0, 212, 255, 1);
+      }
+      /* Navbar */
+
+      /* Login */
+      h1 {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .tulisan_login {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .kotak_login {
+        width: 350px;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        margin: 80px auto;
+        padding: 30px 20px;
+      }
+
+      label {
+        font-size: 11pt;
+      }
+
+      .form_login {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 11pt;
+        margin-bottom: 20px;
+      }
+
+      .link {
+        color: #232323;
+        text-decoration: none;
+        font-size: 10pt;
+      }
+
+      .login button {
+        border: 2px solid #fff;
+        color: #fff;
+        display: block;
+        background: transparent;
+        transition: 0.2s ease-in-out 0s;
+        text-align: center;
+        padding: 10px 20px;
+        width: 100%;
+      }
+
+      .login a {
+        color: #ffffff;
+        text-decoration: none;
+        padding-left: 1rem;
+      }
+
+      .login button:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+      }
+      /* Login */
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="box-navbar">
+        <div class="logo">
+          <h2>Be-Bas</h2>
+        </div>
+        <ul class="links">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../blogs/blogs.html">Blogs</a></li>
+          <li><a href="../log-reg/login.html">Login</a></li>
+          <li><a href="../log-reg/register.html">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- main -->
+    <div class="login">
+      <div class="kotak_login">
+        <p class="tulisan_login">LOGIN</p>
+
+        <form>
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            class="form_login"
+            placeholder="Username atau email .."
+          />
+
+          <label>Email</label>
+          <input
+            type="email"
+            name="username"
+            class="form_login"
+            placeholder="jasuke@gmail.com"
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form_login"
+            placeholder="Password .."
+          />
+
+          <a href="../login.html"><button>REGISTER</button></a>
+
+          <br />
+          <br />
+          <center>
+            <a class="link" href="../home.html">kembali</a>
+          </center>
+        </form>
+      </div>
+    </div>
+    <!-- main -->
+  </body>
+</html>

@@ -148,11 +148,35 @@
 
 /* main */
 
+/* why choose us */
+span.underline{
+  border-bottom: 2px solid rgba(0, 212, 255, 1);
+}
+
+.why{
+  width: 100%;
+  height: 100vh;
+}
+
+.why .box-why{
+  width: 100%;
+  height: 100%;
+  padding: 5% 10% 5% 10% ;
+}
+
+.why .box-why table{
+  width: 100%;
+  height: 100%;
+  border-spacing: 1.5rem;
+}
+/* why choose us */
+
 /* subs */
 .subs {
   width: 100%;
   height: 100%;
   padding: 5% 5% 5% 5%;
+  background-color: #E9F2FA;
 }
 .subs .box-subs {
   width: 50%;
