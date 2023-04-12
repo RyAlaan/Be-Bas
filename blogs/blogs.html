@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,288 +22,118 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- css -->
+    <link rel="stylesheet" href="blogs.css" />
+
     <title>Be-Bas | Blogs</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
+  </head>
 
-        /* Navbar */
-        .navbar {
-            width: 100%;
-            height: 100%;
-            background-color: #202020;
-            color: #ffffff;
-            top: 50%;
-            bottom: 50%;
-            display: flex;
-        }
-
-        .navbar .box-navbar {
-            width: 100%;
-            margin: 0 auto;
-            padding: 0.5rem 2.5rem;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            justify-content: space-between;
-            }
-
-        .navbar .links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        .navbar a:hover {
-            color: rgba(0, 212, 255, 1);
-        }
-
-        /* Navbar */
-
-        /* main */
-        .main {
-            width: 100%;
-            height: 100%;
-            background-color: #E9F2FA;
-            padding: 3% 0 3% 0;
-        }
-
-        .main h1 {
-            color: #000;
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        .main .loc-main {
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .main .loc-main .locate {
-            width: 30%;
-            margin-bottom: 30px;
-            background-color: #FFF;
-            transition: 0.2s ease-in-out 0s;
-        }
-
-        .main .loc-main .locate:hover {
-            transform: scale(1.05);
-        }
-
-        .main .loc-main .locate img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .main .loc-main .locate a {
-            text-decoration: none;
-        }
-
-        .main .loc-main .locate p {
-            text-align: justify;
-            padding: 2rem;
-            font-size: 1.25rem;
-            color: #333;
-        }
-
-        /* main */
-
-        /* footer */
-        .footer-distributed {
-            background-color: black;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-            box-sizing: border-box;
-            width: 100%;
-            text-align: left;
-            font: normal 16px sans-serif;
-            padding: 45px 50px;
-        }
-
-        .footer-distributed .footer-left p {
-            color: #8f9296;
-            font-size: 14px;
-            margin: 0;
-        }
-
-        /* Footer links */
-
-        .footer-distributed p.footer-links {
-            font-size: 18px;
-            font-weight: bold;
-            color: #ffffff;
-            margin: 0 0 10px;
-            padding: 0;
-            transition: ease .25s;
-        }
-
-        .footer-distributed p.footer-links a {
-            display: inline-block;
-            line-height: 1.8;
-            text-decoration: none;
-            color: inherit;
-            transition: ease .25s;
-        }
-
-        .footer-distributed .footer-links a:before {
-            content: " ";
-            font-size: 20px;
-            left: 0;
-            color: #fff;
-            display: inline-block;
-            padding-right: 5px;
-        }
-
-        .footer-distributed .footer-right {
-            float: right;
-            margin-top: 6px;
-            max-width: 180px;
-        }
-
-        .footer-distributed .footer-right a {
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            background-color: #33383b;
-            border-radius: 2px;
-            font-size: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 35px;
-            margin-left: 3px;
-            transition: all .25s;
-        }
-
-        .footer-distributed .footer-right a:hover {
-            transform: scale(1.1);
-        }
-
-        .footer-distributed p.footer-links a:hover {
-            color: rgba(0, 212, 255, 1);
-        }
-    </style>
-</head>
-
-<body>
+  <body>
     <!-- navbar -->
     <nav class="navbar">
-        <div class="box-navbar">
-            <div class="logo">
-                <h2>Be-Bas</h2>
-            </div>
-            <ul class="links">
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="../log-reg/login.html">Login</a></li>
-                <li><a href="../log-reg/register.html">Register</a></li>
-            </ul>
+      <div class="box-navbar">
+        <div class="logo">
+          <h2>Be-Bas</h2>
         </div>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="../log-reg/login.html">Login</a></li>
+          <li><a href="../log-reg/register.html">Register</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- navbar -->
 
     <!-- main -->
     <div class="main">
-        <h1>Mulai Petualanganmu</h1>
+      <h1 class="header" align="center">Mulai Petualanganmu!</h1>
 
-        <div class="loc-main">
-            <div class="locate">
-                <a href="bromo.html">
-                    <img src="../images/bromo.jpg" alt="Gunung Bromo" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Bromo, Jawa Timur
-                    </p>
-                </a>
+      <div class="locate">
+        <div class="local">
+          <h2 class="header-local">Destinasi Lokal</h2>
+
+          <div class="box-local">
+            <div class="item-local bromo">
+              <img src="../images/bromo.jpg" alt="Bromo" />
+              <span class="main-title">Bromo, Jawa Tengah</span><br />
+              <a href="./bromo.html" class="main-btn">Baca</a>
             </div>
 
-            <div class="locate">
-                <a href="labuan-bajo.html">
-                    <img src="../images/labuan bajo.jpg" type="Labuan Bajo" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Labuan Bajo, NTT
-                    </p>
-                </a>
+            <div class="item-local labuan-bajo">
+              <img src="../images/labuan bajo.jpg" alt="Labuan Bajo" />
+              <span class="main-title">Labuan Bajo, NTT</span><br />
+              <a href="./labuan-bajo.html" class="main-btn">Baca</a>
             </div>
 
-            <div class="locate">
-                <a href="uluwatu.html">
-                    <img src="../images/uluwatu.jpg" type="Uluwatu" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Uluwatu, Bali
-                    </p>
-                </a>
+            <div class="item-local uluwatu">
+              <img src="../images/uluwatu.jpg" alt="Uluwatu" />
+              <span class="main-title">Uluwatu, Bali</span><br />
+              <a href="./uluwatu.html" class="main-btn">Baca</a>
             </div>
 
-            <div class="locate">
-                <a href="santorini.html">
-                    <img src="../images/santorini.jpg" type="Santorini" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Santorini, Yunani
-                    </p>
-                </a>
+            <div class="item-local raja-ampat">
+              <img src="../images/raja ampat.jpeg" alt="Raja Ampat" />
+              <span class="main-title">Raja Ampat, Papua</span><br />
+              <a href="./raja-ampat.html" class="main-btn">Baca</a>
             </div>
-
-            <div class="locate">
-                <a href="plitvice.html">
-                    <img src="../images/plitvice.jpg" type="Plitvice" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Plitvice, Kroasia
-                    </p>
-                </a>
-            </div>
-
-            <div class="locate">
-                <a href="machu-picu.html">
-                    <img src="../images/machu picu.jpg" type="Machu Picu" />
-                    <p>
-                        <i class="fa-solid fa-location-dot" style="color: #9ea1a9"></i>
-                        Machu Picu, Meksiko
-                    </p>
-                </a>
-            </div>
+          </div>
         </div>
+
+        <div class="inter">
+          <h2 class="header-inter">Destinasi Internasional</h2>
+
+          <div class="box-inter">
+            <div class="item-inter santorini">
+              <img src="../images/santorini.jpg" alt="Santorini" />
+              <span class="main-title">Santorini, Yunani</span> <br />
+              <p class="main-text"></p>
+              <a href="./santorini.html" class="main-btn">Baca</a>
+            </div>
+
+            <div class="item-inter macu-picu">
+              <img src="../images/plitvice.jpg" alt="Plitvice" />
+              <span class="main-title">Plitvice, Kroasia</span> <br />
+              <p class="main-text"></p>
+              <a href="./plitvice.html" class="main-btn">Baca</a>
+            </div>
+
+            <div class="item-inter plitvice">
+              <img src="../images/machu picu.jpg" alt="Macu Picu" />
+              <span class="main-title">Macu Picu, Meksiko</span> <br />
+              <a href="./machu-picu.html" class="main-btn">Baca</a>
+            </div>
+
+            <div class="item-inter yosemite">
+              <img src="../images/yosemite.jpg" alt="yosemite" />
+              <span class="main-title">Yosemite, AS</span> <br />
+              <a href="./yosemite.html" class="main-btn">Baca</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- main -->
 
     <!-- footer -->
     <footer class="footer-distributed">
-        <div class="footer-right">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
+      <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
 
-        <div class="footer-left">
-            <p class="footer-links">
-                <a class="link-1" href="../home.html">Home</a>
-                <a href="blogs.html">Blog</a>
-                <a href="../log-reg/login.html">Login</a>
-                <a href="../log-reg/register.html">Register</a>
-            </p>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="../index.html">Home</a>
+          <a href="blogs.html">Blog</a>
+          <a href="../log-reg/login.html">Login</a>
+          <a href="../log-reg/register.html">Register</a>
+        </p>
 
-            <p>Be-Bas &copy; 2023</p>
-        </div>
+        <p>Be-Bas &copy; 2023</p>
+      </div>
     </footer>
     <!-- footer -->
-</body>
-
+  </body>
 </html>
